@@ -141,3 +141,46 @@ visaops-risk-intel/
 ├── requirements.txt
 └── README.md
 ```
+---
+
+## 🚀 Run Locally
+
+```bash
+pip install -r requirements.txt
+streamlit run app/explorer.py
+```
+
+---
+
+## 🔬 Research & Extension Potential
+
+This system is intentionally designed to be **research-extendable**.
+
+Potential extensions include:
+- Application to **clinical operations**, labs, or hospitals
+- Statistical validation of stress thresholds
+- Causal modeling of driver signals
+- Cross-center contagion effects
+- Forecasting stress regimes
+
+---
+
+## 👤 Intended Audience
+
+- Operations Analytics
+- Risk & Strategy teams
+- Public sector service delivery
+- Research & methods groups
+- Hiring managers evaluating **end-to-end analytical thinking**
+
+---
+
+## 📌 Key Takeaway
+
+This project is **not a dashboard of metrics**.
+
+It is a **decision-support system** that:
+- Compresses operational complexity into interpretable signals
+- Explains *why* conditions change
+- Evaluates whether warnings arrive early enough to matter
+
