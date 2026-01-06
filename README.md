@@ -58,3 +58,86 @@ Regime Labeling (stable / elevated / stressed)
 Early-Warning Episode Detection
         ↓
 Interactive Dashboard + PDF Risk Memo
+```
+
+---
+
+## 📊 Core Concepts
+
+### 1. Composite Stress Index
+A rule-based index combining standardized operational signals such as:
+- Turnaround Time (TAT) volatility
+- Queue velocity
+- Utilization pressure  
+
+This compresses multiple KPIs into **one interpretable measure of operational strain**.
+
+---
+
+### 2. Regime Labeling
+Each day is classified into one of three regimes:
+- **Stable**
+- **Elevated**
+- **Stressed**
+
+This enables **regime-aware monitoring** rather than static threshold alerts.
+
+---
+
+### 3. Early-Warning Episodes
+The system detects **warning signals prior to stress regimes** and evaluates:
+- Detection rate
+- Lead time (days before stress onset)
+
+This allows **retrospective validation** of whether warning signals were actually useful, not just noisy indicators.
+
+---
+
+### 4. Decision-Grade PDF Memos
+The dashboard exports a **one-page operational risk memo** containing:
+- Current regime & KPIs
+- **Last 7-day operational drivers** (vs previous 7 days)
+- Plain-English interpretation
+- Embedded stress/regime timeline
+
+This mirrors how operational and risk updates are consumed in real organizations.
+
+---
+
+## 🖥️ Dashboard Features
+
+- Center-level selection (e.g. Delhi, Mumbai, Bengaluru)
+- KPI cards:
+  - Regime
+  - Stress Index
+  - Avg TAT
+  - Queue Size
+  - Utilization
+- Stress & regime monitoring charts
+- Early-warning episode tables
+- Raw signal inspection
+- One-click memo & PDF export
+
+---
+
+## 📁 Project Structure
+
+```text
+visaops-risk-intel/
+├── app/
+│   └── explorer.py          # Streamlit dashboard
+├── src/
+│   ├── signals.py           # Signal engineering
+│   ├── stress_index.py      # Stress computation & regimes
+│   ├── early_warning.py     # Lead-time detection
+│   ├── episode_analysis.py  # Episode summaries
+│   ├── plot_stress.py       # Visualization utilities
+│   └── report_generator.py  # PDF memo generation
+├── data/
+│   └── processed/           # Synthetic outputs
+├── reports/
+│   ├── memo_*.md
+│   └── visaops_report_*.pdf
+├── requirements.txt
+└── README.md
+```
