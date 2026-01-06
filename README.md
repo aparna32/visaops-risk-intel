@@ -1,41 +1,60 @@
-# VisaOps Risk Intelligence System (VORIS)
+# VisaOps Risk Intelligence Console
 
-A regime-aware early-warning and risk attribution framework for high-volume visa processing operations.
+A production-style **operational risk monitoring and early-warning system** for visa processing centers, combining signal engineering, regime detection, and automated decision memo generation.
 
-This project focuses on identifying weak operational signals, detecting regime shifts in service systems, and producing interpretable risk intelligence **before** visible SLA breakdowns occur.
+This project demonstrates how **service delivery operations** (e.g. visa centers, public services, back-office ops) can be monitored using **composite stress indices** rather than isolated KPIs — enabling earlier intervention and clearer decision support.
 
-The system is designed as a decision-support tool for regulated, queue-driven operations such as visa processing, KYC workflows, claims processing, and administrative healthcare systems.
-
----
-
-## Core Components
-
-- **Signal Engineering**  
-  Rolling volatility, queue dynamics, utilization, escalation pressure, and SLA risk proxies.
-
-- **Regime Detection** *(in progress)*  
-  Identification of operational states (stable, congested, stressed) using statistical regime models.
-
-- **Risk Scoring & Attribution** *(planned)*  
-  Regime-conditioned risk estimation with interpretable driver attribution.
+> ⚠️ All data used in this project is **synthetic, non-sensitive**, and generated solely for demonstration and research purposes.
 
 ---
 
-## Project Status
+## 🔗 Live Demo & Outputs
 
-Current stage: **Signal layer implemented with synthetic operational data**  
-Next stage: **Operational regime detection**
+- **Live Dashboard (Streamlit):**  
+  👉 *<YOUR STREAMLIT APP URL HERE>*
 
----
-
-## Data Disclaimer
-
-All data used in this repository is **synthetically generated** and does **not** contain proprietary, confidential, or real visa applicant information.
-
-The synthetic dataset is constructed to reflect realistic operational dynamics for research and demonstration purposes only.
+- **Automated PDF Risk Memo:**  
+  Generated directly from the dashboard, including:
+  - Current regime classification  
+  - Last 7-day operational drivers  
+  - Embedded stress & regime timeline  
 
 ---
 
-## License
+## 🧠 Problem Motivation
 
-This project is released under the MIT License.
+Operational teams often monitor dozens of metrics:
+- Turnaround time (TAT)
+- Queue size
+- Utilization
+- Throughput
+
+In practice, this creates **signal overload**:
+- No single indicator explains *how stressed* the system is  
+- Early warning is reactive rather than proactive  
+- Decision updates remain descriptive, not diagnostic  
+
+**This system answers three operational questions clearly:**
+
+1. *Is the system currently stressed?*  
+2. *Why did stress increase or decrease?*  
+3. *Was there an early warning before stress emerged?*  
+
+---
+
+## 🧩 System Overview
+
+The pipeline is intentionally modular and explainable:
+
+```text
+Synthetic Ops Data
+        ↓
+Signal Engineering (rolling stats, z-scores)
+        ↓
+Composite Stress Index
+        ↓
+Regime Labeling (stable / elevated / stressed)
+        ↓
+Early-Warning Episode Detection
+        ↓
+Interactive Dashboard + PDF Risk Memo
