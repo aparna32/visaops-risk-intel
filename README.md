@@ -11,7 +11,7 @@ This project demonstrates how **service delivery operations** (e.g. visa centers
 ## 🔗 Live Demo & Outputs
 
 - **Live Dashboard (Streamlit):**  
-  👉 *<YOUR STREAMLIT APP URL HERE>*
+  👉 https://visaops-risk-intel-eiaekvmmtezj7apt5e7rnt.streamlit.app/
 
 - **Automated PDF Risk Memo:**  
   Generated directly from the dashboard, including:
