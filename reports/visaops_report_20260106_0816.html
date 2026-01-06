@@ -1,0 +1,206 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>VisaOps Risk Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 38px;
+      line-height: 1.5;
+      color: #111;
+    }
+    h1, h2, h3 {
+      color: #1f4e79;
+      margin-bottom: 8px;
+    }
+    h1 { margin-top: 0; }
+    p { margin: 8px 0; }
+    ul { margin: 6px 0 12px 22px; }
+    code {
+      background: #f6f8fa;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 14px 0;
+      font-size: 0.95em;
+    }
+    th, td {
+      border: 1px solid #d0d7de;
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f6f8fa;
+      font-weight: 600;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #d0d7de;
+      margin: 18px 0;
+    }
+    .figure-block {
+      margin: 14px 0 18px 0;
+      padding: 10px 12px;
+      border: 1px solid #d0d7de;
+      border-radius: 8px;
+      background: #fbfcfe;
+    }
+    .figure-title {
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #1f4e79;
+    }
+    .figure-caption {
+      margin-top: 8px;
+      font-size: 0.9em;
+      color: #444;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .footnote {
+      margin-top: 18px;
+      font-size: 0.9em;
+      color: #555;
+    }
+    @page {
+      size: A4;
+      margin: 18mm 16mm 18mm 16mm;
+    }
+  </style>
+</head>
+<body>
+
+<h1>VisaOps Risk Memo — Bengaluru</h1>
+<p>Generated (UTC): <strong>2026-01-06 07:10:36</strong></p>
+<h2>Current Status</h2>
+<ul>
+<li>Regime: <strong>stable</strong></li>
+<li>Stress Index: <strong>-0.74</strong></li>
+<li>Avg TAT (days): <strong>2.97</strong></li>
+<li>Queue Size: <strong>0</strong></li>
+<li>Utilization: <strong>0.73</strong></li>
+</ul>
+<h2>Top Risk Centers (latest day)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">center</th>
+<th style="text-align: left;">regime</th>
+<th style="text-align: right;">stress_index</th>
+<th style="text-align: right;">avg_tat_days</th>
+<th style="text-align: right;">queue_size</th>
+<th style="text-align: right;">utilization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Delhi</td>
+<td style="text-align: left;">elevated</td>
+<td style="text-align: right;">0.182425</td>
+<td style="text-align: right;">3.2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.691802</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mumbai</td>
+<td style="text-align: left;">stable</td>
+<td style="text-align: right;">-0.532753</td>
+<td style="text-align: right;">3.07</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.776827</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bengaluru</td>
+<td style="text-align: left;">stable</td>
+<td style="text-align: right;">-0.74157</td>
+<td style="text-align: right;">2.97</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.726951</td>
+</tr>
+</tbody>
+</table>
+<h2>Early Warning Performance</h2>
+<h3>Summary by Center</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">center</th>
+<th style="text-align: right;">episodes</th>
+<th style="text-align: right;">early_warnings</th>
+<th style="text-align: right;">detection_rate</th>
+<th style="text-align: right;">avg_lead_time_days</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Bengaluru</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delhi</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mumbai</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Episodes for Selected Center</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">stress_start</th>
+<th style="text-align: left;">warning_start</th>
+<th style="text-align: right;">lead_time_days</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">2024-01-24 00:00:00</td>
+<td style="text-align: left;">NaT</td>
+<td style="text-align: right;">nan</td>
+</tr>
+</tbody>
+</table>
+<h2>Notes</h2>
+<ul>
+<li>This demo uses synthetic, non-sensitive operational data.</li>
+<li>Stress Index is a weighted combination of utilization, backlog velocity, and TAT volatility (center-normalized).</li>
+<li>Regimes are rule-based thresholds on Stress Index (stable/elevated/stressed).</li>
+</ul>
+
+<div class="figure-block">
+  <div class="figure-title">Figure — Stress Index with Regime Shading (Bengaluru)</div>
+  <img src="file:///workspaces/visaops-risk-intel/reports/stress_regime_Bengaluru_20260106_0816.png" alt="Stress index regime plot">
+  <div class="figure-caption">
+    Regimes are rule-based labels on the composite stress index (stable / elevated / stressed).
+  </div>
+</div>
+
+<hr/>
+<div class="footnote">
+  Generated by VisaOps Risk Console (demo). Data is synthetic and non-sensitive.
+</div>
+
+</body>
+</html>
